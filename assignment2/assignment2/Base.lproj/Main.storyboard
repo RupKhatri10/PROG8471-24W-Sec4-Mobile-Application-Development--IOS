@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lys-VB-k1l">
+                                <rect key="frame" x="92" y="102" width="230" height="303"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSj-bv-jyQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" keyboardType="namePhonePad" textContentType="given-name"/>
+                                        <connections>
+                                            <action selector="firstNameAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="k6T-du-bhE"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W25-SW-WAX">
+                                        <rect key="frame" x="0.0" y="44" width="230" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" keyboardType="namePhonePad"/>
+                                        <connections>
+                                            <action selector="lastNameAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="WB6-nA-QJU"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Zu-Xa-rbz">
+                                        <rect key="frame" x="0.0" y="88" width="230" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" keyboardType="namePhonePad" textContentType="country-name"/>
+                                        <connections>
+                                            <action selector="countryAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="FsE-eC-cA5"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qk-8W-JXQ">
+                                        <rect key="frame" x="0.0" y="132" width="230" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="ageAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="ntD-uF-IwK"/>
+                                        </connections>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBo-0h-IRA">
+                                        <rect key="frame" x="0.0" y="176" width="230" height="127"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="namePhonePad"/>
+                                    </textView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G15-tH-oFc">
+                                        <rect key="frame" x="0.0" y="303" width="230" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="303" id="dG3-9h-0At"/>
+                                    <constraint firstAttribute="width" constant="230" id="ePY-Th-u6j"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8qe-mU-sLc">
+                                <rect key="frame" x="137" y="455" width="140" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yic-lm-oRe">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0e-z2-uPl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6X-Ck-6YF">
+                                        <rect key="frame" x="0.0" y="60" width="140" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bz2-YC-rHK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWz-4S-7mg">
+                                        <rect key="frame" x="0.0" y="120" width="140" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Clear">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBb-dS-dq3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="680-OC-kLI"/>
+                                    <constraint firstAttribute="width" constant="140" id="iAK-Hc-LWV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.77805877489868258" green="0.857965417022587" blue="0.9329896907216495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lys-VB-k1l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ks-nP-Xyo"/>
+                            <constraint firstItem="8qe-mU-sLc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PlD-xh-bOX"/>
+                            <constraint firstItem="lys-VB-k1l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="mXv-8r-FAE"/>
+                            <constraint firstItem="8qe-mU-sLc" firstAttribute="top" secondItem="lys-VB-k1l" secondAttribute="bottom" constant="50" id="rnA-Sp-BAu"/>
+                            <constraint firstItem="8qe-mU-sLc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uT9-jl-ucp"/>
+                            <constraint firstItem="8qe-mU-sLc" firstAttribute="top" secondItem="lys-VB-k1l" secondAttribute="bottom" constant="50" id="vkX-Ng-ulg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="yic-lm-oRe" id="3qV-95-sCM"/>
+                        <outlet property="age" destination="2qk-8W-JXQ" id="6hA-u4-w0I"/>
+                        <outlet property="clearButton" destination="aWz-4S-7mg" id="GL3-oA-o7C"/>
+                        <outlet property="country" destination="4Zu-Xa-rbz" id="cQO-VR-rW8"/>
+                        <outlet property="displayBox" destination="zBo-0h-IRA" id="bAj-fL-Lrw"/>
+                        <outlet property="displayBoxLabel" destination="G15-tH-oFc" id="Hox-cg-xoX"/>
+                        <outlet property="firstName" destination="QSj-bv-jyQ" id="Gym-s7-N0N"/>
+                        <outlet property="lastName" destination="W25-SW-WAX" id="Sfq-fA-Icf"/>
+                        <outlet property="submitButton" destination="k6X-Ck-6YF" id="76q-CI-TQZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
